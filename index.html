@@ -128,7 +128,33 @@
     <div class="footer__content">
       <p class="eyebrow">Signature Concierge</p>
       <p>Tell us who you are celebrating, and we will script an Oslo fjord experience that feels effortless. Champagne on arrival, curated playlists, private chefs, waterfront photographers &mdash; it all begins with a conversation.</p>
-      <a class="button button--primary" href="mailto:concierge@oslosignaturefjords.com">Start the conversation</a>
+
+      <section class="ai-concierge" aria-labelledby="ai-concierge-title">
+        <div class="ai-concierge__topline">
+          <div>
+            <span class="ai-concierge__badge">AI concierge</span>
+            <h3 id="ai-concierge-title">Start planning with our Fjord Intelligence</h3>
+          </div>
+          <ul class="ai-concierge__trust">
+            <li>Instant availability scan</li>
+            <li>Curated add-ons</li>
+            <li>GDPR aware</li>
+          </ul>
+        </div>
+        <form class="ai-concierge__panel" action="mailto:concierge@oslosignaturefjords.com" method="post">
+          <label class="sr-only" for="concierge-query">Describe your celebration</label>
+          <input id="concierge-query" name="subject" type="text" placeholder="Describe the occasion, dates, guest count, vibe" />
+          <button type="submit">
+            Plan with AI
+            <span aria-hidden="true">&rarr;</span>
+          </button>
+        </form>
+        <div class="ai-concierge__suggestions" aria-label="Suggested prompts">
+          <button type="button">Sunset proposal</button>
+          <button type="button">Executive retreat</button>
+          <button type="button">Electric sightseeing</button>
+        </div>
+      </section>
     </div>
     <p class="footer__note">Imagined for discerning travelers. Media courtesy of Oslo Efoil, Oslo Sea Experience, and Brim Explorer.</p>
   </footer>
