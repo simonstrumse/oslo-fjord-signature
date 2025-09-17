@@ -134,6 +134,7 @@
           <div>
             <span class="ai-concierge__badge">AI concierge</span>
             <h3 id="ai-concierge-title">Start planning with our Fjord Intelligence</h3>
+            <p class="ai-concierge__subtitle">Real-time availability, curated luxuries, sent to your inbox within minutes.</p>
           </div>
           <ul class="ai-concierge__trust">
             <li>Instant availability scan</li>
@@ -143,16 +144,20 @@
         </div>
         <form class="ai-concierge__panel" action="mailto:concierge@oslosignaturefjords.com" method="post">
           <label class="sr-only" for="concierge-query">Describe your celebration</label>
-          <input id="concierge-query" name="subject" type="text" placeholder="Describe the occasion, dates, guest count, vibe" />
-          <button type="submit">
-            Plan with AI
-            <span aria-hidden="true">&rarr;</span>
+          <div class="ai-concierge__input-wrap">
+            <span class="ai-concierge__avatar" aria-hidden="true"></span>
+            <input id="concierge-query" name="subject" type="text" placeholder="Which extraordinary moment are we crafting for you?" />
+          </div>
+          <button type="submit" class="ai-concierge__send" aria-label="Send your request">
+            <span>Plan with AI</span>
+            <span class="ai-concierge__send-icon" aria-hidden="true">&rarr;</span>
           </button>
         </form>
         <div class="ai-concierge__suggestions" aria-label="Suggested prompts">
           <button type="button">Sunset proposal</button>
           <button type="button">Executive retreat</button>
           <button type="button">Electric sightseeing</button>
+          <button type="button">Family celebration</button>
         </div>
       </section>
     </div>
